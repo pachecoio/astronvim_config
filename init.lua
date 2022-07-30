@@ -18,7 +18,7 @@ local config = {
   },
 
   -- Set colorscheme
-  colorscheme = "gruvbox",
+  colorscheme = "darcula",
 
   -- Override highlight groups in any theme
   highlights = {
@@ -85,6 +85,8 @@ local config = {
         "morhetz/gruvbox",
         disable = false
       },
+      -- { "folke/tokyonight.nvim" },
+      { "doums/darcula" },
       { "onsails/lspkind.nvim" },
       {
         's1n7ax/nvim-window-picker',
@@ -272,8 +274,8 @@ local config = {
     n = {
       -- second key is the lefthand side of the map
       ["<C-s>"] = { ":w!<cr>", desc = "Save File" },
-      ["<Leader>t"] = { ":TestNearest<cr>", desc = "Test nearest" },
-      ["<Leader>Tf"] = { ":TestFile<cr>", desc = "Test file" },
+      ["<Leader>t"] = { ":w | :TestNearest<cr>", desc = "Test nearest" },
+      ["<Leader>Tf"] = { ":w | :TestFile<cr>", desc = "Test file" },
       ["<Leader>Ts"] = { ":TestSuite<cr>", desc = "Test suite" },
       ["<Leader>;"] = { ":ToggleTerm<cr>", desc = "Toggle terminal" },
     },
