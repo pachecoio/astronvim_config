@@ -25,12 +25,38 @@ local config = {
     -- duskfox = { -- a table of overrides
     --   Normal = { bg = "#000000" },
     -- },
+    darcula = {
+      Normal = { bg = nil }
+    },
     default_theme = function(highlights) -- or a function that returns one
       local C = require "default_theme.colors"
 
       highlights.Normal = { fg = C.fg, bg = C.bg }
       return highlights
     end,
+  },
+
+
+  header = {
+    " ",
+    " ",
+    " ",
+    " ",
+    " ",
+    "██████     █████    ███████   ██   ██   ███████   ███████    █████████",
+    "██   ██   ██   ██   ██        ██   ██   ██        ██         ██     ██",
+    "██████    ███████   ██        ███████   ████      ██         ██     ██",
+    "██        ██   ██   ██        ██   ██   ██        ██         ██     ██",
+    "██        ██   ██   ███████   ██   ██   ███████   ███████    █████████",
+    " ",
+    "                    ███    ██ ██    ██ ██ ███    ███",
+    "                    ████   ██ ██    ██ ██ ████  ████",
+    "                    ██ ██  ██ ██    ██ ██ ██ ████ ██",
+    "                    ██  ██ ██  ██  ██  ██ ██  ██  ██",
+    "                    ██   ████   ████   ██ ██      ██",
+    " ",
+    " ",
+    " ",
   },
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
